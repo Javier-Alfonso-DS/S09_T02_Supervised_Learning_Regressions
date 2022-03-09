@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="DepDelay <= 0.8\nsquared_error = 1.0\nsamples = 8173\nvalue = -0.0"] ;
+1 [label="DepDelay <= -0.2\nsquared_error = 0.2\nsamples = 7030\nvalue = -0.3"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="TaxiOut <= 1.4\nsquared_error = 0.1\nsamples = 5087\nvalue = -0.5"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.1\nsamples = 4822\nvalue = -0.5"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.4\nsamples = 265\nvalue = 0.2"] ;
+2 -> 4 ;
+5 [label="DepDelay <= 0.3\nsquared_error = 0.2\nsamples = 1943\nvalue = 0.2"] ;
+1 -> 5 ;
+6 [label="squared_error = 0.1\nsamples = 1250\nvalue = 0.0"] ;
+5 -> 6 ;
+7 [label="squared_error = 0.1\nsamples = 693\nvalue = 0.5"] ;
+5 -> 7 ;
+8 [label="DepDelay <= 3.0\nsquared_error = 1.5\nsamples = 1143\nvalue = 1.9"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="DepDelay <= 1.7\nsquared_error = 0.4\nsamples = 974\nvalue = 1.5"] ;
+8 -> 9 ;
+10 [label="squared_error = 0.2\nsamples = 611\nvalue = 1.1"] ;
+9 -> 10 ;
+11 [label="squared_error = 0.2\nsamples = 363\nvalue = 2.1"] ;
+9 -> 11 ;
+12 [label="DepDelay <= 6.1\nsquared_error = 2.2\nsamples = 169\nvalue = 4.1"] ;
+8 -> 12 ;
+13 [label="squared_error = 0.6\nsamples = 155\nvalue = 3.7"] ;
+12 -> 13 ;
+14 [label="squared_error = 5.9\nsamples = 14\nvalue = 7.7"] ;
+12 -> 14 ;
+}
